@@ -56,11 +56,14 @@
 
         <div style="height: 40px; width: 2px; background-color: #905947;"></div>
 
-        <div class="d-flex flex-column midle" style="width: 80px; color: #905947;">
+        <button type="button" class="m-0 border-0 bg-transparent d-flex flex-column midle align-items-center justify-content-center" 
+          style="width: 80px; color: #905947;"
+          data-bs-toggle="modal" data-bs-target="#modalcoutdown"
+        >
           <h5 class="m-0" style="font-size: 16px;">DEZ</h5>
           <h5 class="m-0" style="font-size: 38px;">02</h5>
           <h5 class="m-0" style="font-size: 16px;">2023</h5>
-        </div>
+        </button>
 
         <div style="height: 40px; width: 2px; background-color: #905947;"></div>
 
@@ -240,6 +243,97 @@
 
     </div>
   </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalcoutdown" tabindex="-1" aria-labelledby="modalcoutdownLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalcoutdownLabel">Está chegando...</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-2" id="modal-body">
+  
+            <div class="d-flex flex-row align-items-center justify-content-center">
+  
+              <div class="flex-fill rounded bg-primary p-2 d-flex flex-column align-items-center justify-content-center text-white m-1" 
+                style="width: 80px; height: 80px;"
+              >
+                <h2 id="days" class="m-0">90</h2>
+                <p class="m-0" style="font-size: 12px;">Dias</p>
+              </div>
+  
+              <div class="flex-fill rounded bg-primary p-2 d-flex flex-column align-items-center justify-content-center text-white m-1" 
+                style="width: 80px; height: 80px;"
+              >
+                <h2 id="hours" class="m-0">90</h2>
+                <p class="m-0" style="font-size: 12px;">Horas</p>
+              </div>
+  
+              <div class="flex-fill rounded bg-primary p-2 d-flex flex-column align-items-center justify-content-center text-white m-1" 
+                style="width: 80px; height: 80px;"
+              >
+                <h2 id="minutes" class="m-0">90</h2>
+                <p class="m-0" style="font-size: 12px;">Minutos</p>
+              </div>
+  
+              <div class="flex-fill rounded bg-primary p-2 d-flex flex-column align-items-center justify-content-center text-white m-1" 
+                style="width: 80px; height: 80px;"
+              >
+                <h2 id="seconds" class="m-0">90</h2>
+                <p class="m-0" style="font-size: 12px;">Segundos</p>
+              </div>
+  
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Dec 2, 2023 11:00:00").getTime();
+      
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+      
+        // Get today's date and time
+        var now = new Date().getTime();
+          
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+          
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        var modalBodyEl = document.getElementById("modal-bodys");
+
+        var daysEl = document.getElementById("days");
+        var hoursEl = document.getElementById("hours");
+        var minutesEl = document.getElementById("minutes");
+        var secondsEl = document.getElementById("seconds");
+
+        // If the count down is over, write some text 
+        if (distance < 0) {
+          clearInterval(x);
+          // modalBodyEl.innerHTML = "EXPIRED";
+          days = 0;
+          hours = 0;
+          minutes = 0;
+          seconds = 0;
+        }
+
+        daysEl.innerHTML = days;
+        hoursEl.innerHTML = hours;
+        minutesEl.innerHTML = minutes;
+        secondsEl.innerHTML = seconds;
+          
+      }, 1000);
+  </script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
