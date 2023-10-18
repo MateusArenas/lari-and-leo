@@ -293,20 +293,23 @@
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.30.0/index.min.js"></script>
+
   <script>
 
-
-        document.addEventListener("DOMContentLoaded", function() {
-            try {
-              var modalcoutdownEl = document.getElementById('modalcoutdown');
-              if (modalcoutdownEl) {
-                var myModal = new bootstrap.Modal(modalcoutdownEl, {});
-                myModal.toggle();
-              }
-            } catch (error) {
-              
+      document.addEventListener("DOMContentLoaded", function() {
+          try {
+            var modalcoutdownEl = document.getElementById('modalcoutdown');
+            if (modalcoutdownEl) {
+              var myModal = new bootstrap.Modal(modalcoutdownEl, {});
+              myModal.toggle();
             }
-        });
+          } catch (error) {
+            
+          }
+      });
 
       // Set the date we're counting down to
       var countDownDate = new Date("Dec 2, 2023 11:00:00").getTime();
@@ -352,9 +355,7 @@
   </script>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/date-fns@2.30.0/index.min.js"></script>
+
 
 </body>
 </html>
