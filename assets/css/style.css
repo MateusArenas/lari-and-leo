@@ -1,4 +1,39 @@
 @font-face {
   font-family: "pacifico-regular";
-  src: url("assets/fonts/Pacifico-Regular.ttf");
+  src: url("../fonts/Pacifico-Regular.ttf");
+}
+
+@font-face {
+  font-family: "dancing-regular";
+  src: url("../fonts/DancingScript-Regular.ttf");  
+}
+
+@font-face {
+  font-family: "adelia";
+  src: url("../fonts/adelia.ttf");  
+}
+
+@font-face {
+  font-family: "Cherolina";
+  src: url("../fonts/Cherolina.ttf");  
+}
+
+@font-face {
+  font-family: "Calligraphy";
+  src: url("../fonts/Calligraphy.otf");  
+}
+
+@font-face {
+  font-family: "Pretty-Rose";
+  src: url("../fonts/Pretty-Rose.ttf");  
+}
+
+@font-face {
+  font-family: "Thank-You";
+  src: url("../fonts/Thank-You.ttf");  
+}
+
+@font-face {
+  font-family: "SF-Pro-Display-Regular";
+  src: url("../fonts/SF-Pro-Display-Regular.otf");  
 }

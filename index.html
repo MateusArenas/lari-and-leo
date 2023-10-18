@@ -21,27 +21,101 @@
       flex: 1;
     }
 
+    .fs-big {
+      font-size: 52px;
+    }
+
+    .midle {
+      /* border-width: 2px;
+      border-color: #905947;
+      border-style: solid;
+      border-top: 0;
+      border-bottom: 0; */
+    }
+
   </style>
 
 </head>
 <body>
   
-  <div class="d-flex flex-fill flex-column position-relative justify-content-center align-items-center">
+  <div class="d-flex flex-fill flex-column position-relative justify-content-start align-items-center">
     <img src="assets/images/s3.webp" alt=""
-      style="position: absolute; height: 100%; width: 100%; opacity: .65;"
+      style="position: absolute; height: 100%; width: 100%; opacity: .35;"
     >
 
 
-  <div class="text-center" style="font-family: 'pacifico-regular';">
-      <h1>Larissa</h1>
-      <h1>&</h1>
-      <h1>Leonardo</h1>
+    <div class="text-center text-dark p-5" style="z-index: 2;">
+
+      <div class="mb-4 pt-4">
+        <h1 class="m-0 fs-big" style="font-family: 'Thank-You';">Leonardo</h1>
+        <h1 class="m-0 fs-2" style="font-family: 'Thank-You';">&</h1>
+        <h1 class="m-0 fs-big" style="font-family: 'Thank-You'; margin-top: -12px !important;">Larissa</h1>
+      </div>
+
+      <h5 style="font-family: 'SF-Pro-Display-Regular'; font-size: 16px;">Convidam você para a cerimónia de casamento, a realizar-se no dia</h5>
+
+      <div class="d-flex flex-row justify-content-center align-items-center my-4">
+        <h5 class="text-center" style="width: 80px;">SÁB</h5>
+
+        <div style="height: 40px; width: 2px; background-color: #905947;"></div>
+
+        <div class="d-flex flex-column midle" style="width: 80px; color: #905947;">
+          <h5 class="m-0" style="font-size: 16px;">SET</h5>
+          <h5 class="m-0" style="font-size: 38px;">30</h5>
+          <h5 class="m-0" style="font-size: 16px;">2023</h5>
+        </div>
+
+        <div style="height: 40px; width: 2px; background-color: #905947;"></div>
+
+        <h5 class="text-center" style="width: 80px;">16H00</h5>
+      </div>
+
+      <!-- <h5 class="mb-4" style="font-family: 'SF-Pro-Display-Regular'; font-size: 14px;">LOCAL: NO RANCHO GUT BELA</h5> -->
+
+      
+      <!-- <img class="my-3" src="assets/images/simples.png" style="width: 120px; height: 40px;"> -->
+      
+
+      <h5 class="mb-3" style="font-family: 'SF-Pro-Display-Regular'; font-size: 16px; font-weight: 500;">Clique para interagir!</h5>
+      
+      <div class="d-flex flex-row align-items-start justify-content-center"
+        style="font-family: 'SF-Pro-Display-Regular';"
+      >
+
+        <div class="d-flex flex-column align-items-center">
+          <button type="button" class="btn btn-primary rounded-circle d-flex justify-content-center align-items-center border-0" 
+            style="width: 60px; height: 60px; background-color: #905947;"
+          >
+            <svg viewBox="0 0 24 24" style="height: 40px; width: 40px;"><path fill="currentColor" d="M12 4C14.2 4 16 5.8 16 8C16 10.1 13.9 13.5 12 15.9C10.1 13.4 8 10.1 8 8C8 5.8 9.8 4 12 4M12 2C8.7 2 6 4.7 6 8C6 12.5 12 19 12 19S18 12.4 18 8C18 4.7 15.3 2 12 2M12 6C10.9 6 10 6.9 10 8S10.9 10 12 10 14 9.1 14 8 13.1 6 12 6M20 19C20 21.2 16.4 23 12 23S4 21.2 4 19C4 17.7 5.2 16.6 7.1 15.8L7.7 16.7C6.7 17.2 6 17.8 6 18.5C6 19.9 8.7 21 12 21S18 19.9 18 18.5C18 17.8 17.3 17.2 16.2 16.7L16.8 15.8C18.8 16.6 20 17.7 20 19Z"></path></svg>
+          </button>
+          <p class="mt-1" style="width: 60px; font-size: 12px;">Endereço do local</p>
+        </div>
+
+        <div class="d-flex flex-column align-items-center">
+          <button type="button" class="btn btn-primary rounded-circle d-flex justify-content-center align-items-center border-0 mx-4" 
+            style="width: 60px; height: 60px; background-color: #905947;"
+          >
+            <svg viewBox="0 0 24 24" style="height: 40px; width: 40px;"><path fill="currentColor" d="M10 9C8.9 9 8 9.92 8 11.05C8 11.62 8.22 12.12 8.59 12.5L12 16L15.42 12.5C15.78 12.13 16 11.61 16 11.05C16 9.92 15.1 9 14 9C13.46 9 12.95 9.23 12.59 9.6L12 10.2L11.42 9.61C11.05 9.23 10.54 9 10 9M20 4C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4H20M16.7 8.06L20 6H4L7.3 8.06C6.89 8.45 6.55 8.92 6.33 9.45L4 8V18H20V8L17.67 9.45C17.45 8.92 17.11 8.45 16.7 8.06Z"></path></svg>
+          </button>
+          <p class="mt-1" style="width: 80px; font-size: 12px;">confirme sua presença</p>
+        </div>
+
+        <div class="d-flex flex-column align-items-center">
+          <button type="button" class="btn btn-primary rounded-circle d-flex justify-content-center align-items-center border-0" 
+            style="width: 60px; height: 60px; background-color: #905947;"
+          >
+            <svg viewBox="0 0 24 24" style="height: 40px; width: 40px;"><path fill="currentColor" d="M12.5,1.5C10.73,1.5 9.17,2.67 8.67,4.37C8.14,4.13 7.58,4 7,4A4,4 0 0,0 3,8C3,9.82 4.24,11.41 6,11.87V19H19V11.87C20.76,11.41 22,9.82 22,8A4,4 0 0,0 18,4C17.42,4 16.86,4.13 16.33,4.37C15.83,2.67 14.27,1.5 12.5,1.5M12,10.5H13V17.5H12V10.5M9,12.5H10V17.5H9V12.5M15,12.5H16V17.5H15V12.5M6,20V21A1,1 0 0,0 7,22H18A1,1 0 0,0 19,21V20H6Z"></path></svg>
+          </button>
+          <p class="mt-1" style="width: 60px; font-size: 12px;">PIX do Buffet</p>
+        </div>
+      </div>
+
     </div>
 
 
-    <img src="assets/images/s.webp" 
+    <!-- <img src="assets/images/s.webp" 
       style="position: absolute; top: 0; left: 0; width: 120px; height: 120px; transform: rotate(95deg) scale(1.2);"
-    >
+    > -->
 
     <img src="assets/images/s.webp" 
       style="position: absolute; bottom: 0; right: 0; width: 120px; height: 120px; transform: rotate(-95deg) scale(1.2);"
@@ -51,14 +125,16 @@
       style="position: absolute; bottom: -38px; left: -16px; width: 120px; height: 120px; transform: rotate(30deg) scale(1.2);"
     >
 
-    <img src="assets/images/7004c511-4da5-4432-a76a-0af46dc7bf6b.png" 
+    <!-- <img src="assets/images/7004c511-4da5-4432-a76a-0af46dc7bf6b.png" 
       style="position: absolute; top: -38px; right: -16px; width: 120px; height: 120px; transform: rotate(-126deg) scale(1.2);"
-    >
+    > -->
 
   </div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/date-fns@2.30.0/index.min.js"></script>
+
 </body>
 </html>
