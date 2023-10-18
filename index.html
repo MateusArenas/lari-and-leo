@@ -294,15 +294,18 @@
     </div>
 
   <script>
-      try {
-        var modalcoutdownEl = document.getElementById('modalcoutdown');
-        if (modalcoutdownEl) {
-          var myModal = new bootstrap.Modal(modalcoutdownEl, {});
-          myModal.toggle();
+
+      setTimeout(() => {
+        try {
+          var modalcoutdownEl = document.getElementById('modalcoutdown');
+          if (modalcoutdownEl) {
+            var myModal = new bootstrap.Modal(modalcoutdownEl, {});
+            myModal.toggle();
+          }
+        } catch (error) {
+          
         }
-      } catch (error) {
-        
-      }
+      }, 1200);
 
       // Set the date we're counting down to
       var countDownDate = new Date("Dec 2, 2023 11:00:00").getTime();
